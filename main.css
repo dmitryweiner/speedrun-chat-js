@@ -21,6 +21,14 @@ body, html {
     align-content: center;
 }
 
+@media screen and (max-width: 800px) {
+    .wrapper {
+        margin: 0;
+        width: 100%;
+        align-items: start;
+    }
+}
+
 .container {
     height: 60%;
     width: 100%;
@@ -31,6 +39,12 @@ body, html {
     padding: 10px;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        height: 100%;
+    }
 }
 
 .container h1 {
@@ -65,4 +79,10 @@ body, html {
 
 #username {
     width: 150px;
+}
+
+@media screen and (max-width: 800px) {
+    #username {
+        width: 50px;
+    }
 }
