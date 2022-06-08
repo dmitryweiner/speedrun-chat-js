@@ -16,6 +16,11 @@ const username = document.getElementById("username");
 const message = document.getElementById("message");
 form.addEventListener("submit", event => {
     event.preventDefault();
+    if (!username.value.trim() || !message.value.trim()) {
+        // TODO: show message
+        return;
+    }
+
     sendMessage(username.value, message.value);
     message.value = "";
 });

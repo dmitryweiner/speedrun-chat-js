@@ -9,6 +9,7 @@ body, html {
     background: linear-gradient(120deg, rgba(145,139,255,1) 48%, rgba(87,242,49,1) 92%, rgba(0,212,255,1) 100%);
     font-family: Verdana, serif;
     font-size: 16px;
+    color: #343434;
 }
 
 .wrapper {
@@ -32,11 +33,15 @@ body, html {
     flex-direction: column;
 }
 
+.container h1 {
+    text-align: center;
+}
+
 #list {
     overflow-y: auto;
     flex: 1 auto;
     list-style-type: none;
-    padding: 0;
+    padding-left: 5px;
 }
 
 #list .username {
@@ -45,13 +50,19 @@ body, html {
 
 #form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-#form div {
+#form * {
     margin: 5px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+#message {
+    flex: 1 auto;
 }
 
 #username {
-    width: 200px;
+    width: 150px;
 }
