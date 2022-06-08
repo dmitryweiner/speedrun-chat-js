@@ -1,4 +1,4 @@
-const SERVER_URL = "http://localhost:3000/";
+const SERVER_URL = "https://speedrun-chat-server-js.herokuapp.com/";
 const TIMEOUT = 1000;
 
 let items = [
